@@ -1,12 +1,16 @@
 import { createStore } from 'vuex'
+import home from './home'
+import team from './team'
+import skils from './skils'
+
+
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+	modules: {
+		home,
+		team,
+		skils
+
+	},
+	strict: process.env.NODE_ENV !== 'production',
+});

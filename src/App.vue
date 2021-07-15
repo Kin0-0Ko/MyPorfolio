@@ -1,30 +1,68 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+	<div class="nav">
+		<ul class="ul-nav">
+
+			<router-link 
+					v-for="item in menu"
+					:key="item.route"
+					:to="{ name: item.route }" 
+					v-slot="{ route, isExactActive, navigate }" 
+				>
+					<li class="nav-item "  >
+						<a class="underline" :class="isExactActive ? 'active' : ''" :href="route.fullPath" @click="navigate" >{{ item.title }}</a>
+					</li>
+			</router-link>
+			
+		</ul>
+	</div>
+
+	<div class="main"> <transition name="page"> <router-view></router-view> </transition> </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+<script>
+	import { mapGetters } from 'vuex';
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+	export default {
+		data: () => ({
+			menu: [
+				{ route: 'Home', title: 'Home' },
+				{ route: 'Skils', title: 'Skils'},
+				{ route: 'Services', title: 'Services'},
+				{ route: 'Team', title: 'Team'},
+				{ route: 'Contacts', title: 'Contacts'}
+			],
+			
+		}),
+	}
+</script>
+
+
+
+<style lang="sass">
+@import 'src/assets/styles/main.sass';
+.page-enter-active,.page-leave-active 
+
+    transition: all .7s ease
+
+
+.page-enter-from, .page-leave-to 
+	opacity: 0
+	transform: translate(-5%, 0)
+
+
+.ul-nav
+	list-style: none
+	display: flex
+	flex-direction: row
+	justify-content: center
+	background-color: $mainDGray
+	margin: 0
+
+.nav-item
+	padding: 17px
+a
+		position: relative
+	
 </style>

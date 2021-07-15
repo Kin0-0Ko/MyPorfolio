@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+=bold
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700
+=reg
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300
+
+.bold	
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700
+.regular
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300
+
+	
+	
+	
+$mainRed: #ca3c3c
+$mainDGray: #363636
+$mainGray: #666666
+$white: #eeeeee
+$bg: #ebebeb
+$mainLGray: #cccccc
+
+input
+	background-color: transparent 
+	outline: none
+	border: 2.5px solid $mainDGray
+	height: 30px
+textarea
+	background-color: transparent 
+	outline: none
+	border: 2.5px solid $mainDGray
+	height: 30px
+
+body
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	background-color: $bg
+a
+	text-decoration: none
+	color: $white
+.btn	
+	outline: none
+	background-color: transparent 
+	border: solid 3px $mainRed
+	border-radius: 5px
+	color: $mainRed
+	+reg
+h1,h2,h3	
+	+bold
+
+.active::after
+    width: 100%; 
+
+
+.underline::after
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #ffffff;
+
+    
+
+.underline:hover::after
+    animation: unerline 300ms ease-in
+    width: 100%
+
+
+// 	Animations   \\
+
+
+
+@keyframes unerline
+        from
+            width: 0%
+        to
+            width: 100%
+@keyframes slide
+        from
+            height: 0%
+        to
+            height: 30%
+
+		
