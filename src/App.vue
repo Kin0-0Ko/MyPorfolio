@@ -31,7 +31,7 @@
 				{ route: 'Skils', title: 'Skils'},
 				{ route: 'Services', title: 'Services'},
 				{ route: 'Team', title: 'Team'},
-				{ route: 'Contacts', title: 'Contacts'}
+				// { route: 'Contacts', title: 'Contacts'}
 			],
 			
 		}),

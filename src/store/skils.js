@@ -34,15 +34,15 @@ export default {
 		boosts: [
 			{
 				icon: 'rocket' ,
-				h: 'Totam rem aperiam eaque',
-				desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
+				h: 'Execution speed',
+				desc: 'For an additional fee, you can speed up the work	(within reasonable limits)',
 				active: true,
 				color: 'red'
 			},
 			{
 				icon: 'unlock',
-				h: 'Nemo enim ipsam voluptatem',
-				desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
+				h: 'Edits',
+				desc: 'Corrections of the already agreed terms of reference are paid. (After 2 edits)',
 				active: false,
 				color: 'gray'
 
@@ -50,28 +50,28 @@ export default {
 			},
 			{
 				icon:'location-arrow',
-				h: 'Ut enim ad minima veniam' ,
-				desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
+				h: 'Prepaid expense',
+				desc: ' Advance payment is 50 % of the order price ',
 				active: false,
 				color: 'gray'
 			},
 			{
 				icon: 'phone-alt',
-				h: 'Quis nostrum exercitationem ullam',
-				desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
+				h: 'Communication',
+				desc: 'Communication takes place through your chosen method',
 				active: false,
 				color: 'gray'
 
 
 			},
-			{
-				icon: 'book',
-				h: 'Neque porro quisquam est qui',
-				desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-				active: false,
-				color: 'gray'
+			// {
+			// 	icon: 'book',
+			// 	h: 'Neque porro quisquam est qui',
+			// 	desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
+			// 	active: false,
+			// 	color: 'gray'
 
-			},
+			// },
 		],
 	},
 	getters: {

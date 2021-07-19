@@ -3,33 +3,13 @@ export default {
 	state: {
 		team: [{
 			name: 'Nikita Kov',
-			post: 'Web-developer',
-			about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit lorem Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor',
+			post: 'Frontend-developer',
+			about: 'Hi! I am a junior front-end developer. I will be glad to work with you',
 			inst: '#',
 			twtr: '#',
-			git: '#',
+			git: 'https://github.com/Kin0-0Ko',
 			hover: false,
-
-		},
-		{
-			name: 'Michael Joe',
-			post: 'Manager',
-			about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit lorem Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor',
-			inst: '#',
-			twtr: '#',
-			git: '#',
-			hover: false,
-
-		},
-		{
-			name: 'Justin West',
-			post: 'Designer',
-			about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit lorem Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor',
-			inst: '#',
-			twtr: '#',
-			git: '#',
-			hover: false,
-		}],
+		},],
 
 	},
 	getters: {

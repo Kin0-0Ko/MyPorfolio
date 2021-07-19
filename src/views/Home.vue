@@ -13,11 +13,11 @@
 
 <div class="catalog">
 	<div class="catalog-item" @mouseenter="hoverOn(item.title)" @mouseleave="hoverOut(item.title)" :key="item.title"  v-for="item in items">
-		<img src="#" alt="">
+		<img :class="item" src="@/assets/first.png" alt="">
 		<transition name="fade">
 			<div v-if="item.hover" class="hover" >
 			<h3 class="bold">{{item.title}}</h3>
-			<span class="regular">Designed by {{item.author}}</span>
+			<span class="regular">Develop by {{item.author}}</span>
 		</div>
 		</transition>
 	</div>

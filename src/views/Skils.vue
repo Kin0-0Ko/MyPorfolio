@@ -26,17 +26,11 @@
 		  </div>
         </div>
         <div class="skils-left_about">
-          <h3 class="skils-left_about-h">Something about our skills</h3>
+          <h3 class="skils-left_about-h">About our skills</h3>
           <span
-            >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident. Sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-            inventore veritatis et quasi architecto beatae vitae dicta.</span
+            >
+			You can order a SPA, layout, business card site or multi-page site from us. They will be developed in HTML, Css (Scss or Sass), Js (Native, JQuery or Vue).
+			</span
           >
         </div>
       </div>
@@ -45,7 +39,7 @@
         <div v-for="boost in boosts" :key="boost">
 		<div class="skils-right_item" :class="{ active: boost.active,}">		
           <fa-icon class="skils-right_item-icon" :icon="boost.icon"  :style="{color: boost.color}"/>
-          <span>Totam rem aperiam eaque</span>
+          <span>{{boost.h}}</span>
           <button class="skils-btn btn" @click="setActive(boost)">+</button>
 			</div>
 				<transition name="slide">
@@ -90,12 +84,12 @@ export default {
 	transition: all .3s ease;
 
 .slide-leave-to
-	height: 100px
+	height: 70px
 	opacity: 0;
 
 
 .slide-enter-to
-	height: 100px
+	height: 70px
   	opacity: 0
 
 

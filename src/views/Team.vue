@@ -5,22 +5,22 @@
 		  OUR <br/>
         TEAM.
       </span>
-    </h2>
+    </h2> 
 
     <div class="teammates" >
 
       <div class="card " @mouseenter="hoverOn(people.name)" @mouseleave="hoverOut(people.name)"  v-for="people in teammates" :key="people">
 
         <div class="card_top" >
-          <div class="card_top-avatar" >
-            <span class="avatar_d"></span>
+          <div class="card_top-avatar">
+            <img class="img" src="@/assets/avatar.png" alt="" >
           </div>
 
 		<transition name="rotate">
 			<div v-if="people.hover" class="card_top-icons">
-           		<span class="icons inst"><fa-icon class="icon" :icon="['fab', 'instagram']" style="color:white"/> <a :href="people.inst"></a></span>
-            	<span class="icons twtr"><fa-icon class="icon" :icon="['fab', 'facebook']" style="color:white"/><a :href="people.twtr"></a></span>
-            	<span class="icons git"><fa-icon class="icon" :icon="['fab', 'github']" style="color:white"/><a :href="people.git"></a></span>
+           		<span class="icons inst"> <a class="icons_img" :href="people.inst"><fa-icon class="icon" :icon="['fab', 'instagram']" style="color:white"/></a></span>
+            	<span class="icons twtr"><a class="icons_img" :href="people.twtr"><fa-icon class="icon" :icon="['fab', 'facebook']" style="color:white"/></a></span>
+            	<span class="icons git"><a class="icons_img" :href="people.git"><fa-icon class="icon" :icon="['fab', 'github']" style="color:white"/></a></span>
           </div>
 		</transition>
 
@@ -87,8 +87,9 @@ export default {
 
 
 	
-
-
+.img
+	width: 100%
+	height: 100%
 
 
 
@@ -96,6 +97,12 @@ export default {
 	display: flex
 	justify-content: center
 	align-items: center
+	&_img
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
 .icon
 	width: 30px !important
 	height: 30px
@@ -125,6 +132,9 @@ export default {
 	width: 350px
 	height: 450px
 	margin: 1%
+	background-color: #fff	
+	border-radius: 30px
+	box-shadow: 0px 10px 20px 1px $mainGray;
 	&_top
 		+reg
 		padding: 5px
@@ -134,8 +144,9 @@ export default {
 		&-avatar
 			height: 130px
 			width: 130px
-			border-radius: 50%
-			background-color: $mainLGray
+			border-radius: 100%
+			// background-color: $mainLGray
+			// background-image: url(../assets/avatar.png)
 		&-icons
 			margin-left: -35px
 			display: flex
@@ -164,6 +175,7 @@ export default {
 			+bold
 		&-about	
 			+reg
+			font-size: 18px
 
 
 </style>

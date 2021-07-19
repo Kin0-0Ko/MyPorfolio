@@ -7,6 +7,7 @@ export default {
 				author: 'Me',
 				date: 'Today',
 				hover: true,
+				img: 'first.png'
 			},
 			{
 				title: 'Second Project',
