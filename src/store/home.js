@@ -3,23 +3,27 @@ export default {
 	state: {
 
 		items: [{
-				title: 'First Project',
+				title: 'Financial Сalculator',
 				author: 'Me',
 				date: 'Today',
 				hover: true,
-				img: 'first.png'
+				class: 'first'
 			},
 			{
-				title: 'Second Project',
+				title: 'Piroll',
 				author: 'Me',
 				date: 'Month Ago',
 				hover: false,
+				class: 'two'
+
 			},
 			{
 				title: 'Third Project',
 				author: 'Me',
 				date: 'Three Month Ago',
 				hover: false,
+				class: 'three'
+
 			}
 		],
 	},

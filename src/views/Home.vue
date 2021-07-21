@@ -12,8 +12,8 @@
 </div>
 
 <div class="catalog">
-	<div class="catalog-item" @mouseenter="hoverOn(item.title)" @mouseleave="hoverOut(item.title)" :key="item.title"  v-for="item in items">
-		<img :class="item" src="@/assets/first.png" alt="">
+	<div class="catalog-item" :class="item.class" @mouseenter="hoverOn(item.title)" @mouseleave="hoverOut(item.title)" :key="item.title"  v-for="item  in items">
+		<!-- <img class="" src="@/assets/first.png" alt=""> -->
 		<transition name="fade">
 			<div v-if="item.hover" class="hover" >
 			<h3 class="bold">{{item.title}}</h3>
@@ -105,7 +105,7 @@ export default {
 	h3
 		margin: 0px
 
-		
+
 
 .filters
 	display: flex
@@ -117,5 +117,14 @@ export default {
 	background-color: $mainRed
 	color: $white	
 		
-
+.first
+	background-image: url(../assets/first.png)
+	background-size: 300px 300px
+	background-position: center
+	background-repeat: no-repeat
+.two
+	background-image: url(../assets/two.png)
+	background-size: 300px 300px
+	background-position: center
+	background-repeat: no-repeat
 </style>
