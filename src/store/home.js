@@ -5,25 +5,35 @@ export default {
 		items: [{
 				title: 'Financial Сalculator',
 				author: 'Me',
-				date: 'Today',
+				date: '19.09.2020',
 				hover: true,
-				class: 'first'
+				class: 'first',
+				a: 'http://kinko.epizy.com/indexOne.html'
 			},
 			{
 				title: 'Piroll',
 				author: 'Me',
-				date: 'Month Ago',
+				date: '3.05.2019',
 				hover: false,
-				class: 'two'
+				class: 'two',
+				a: 'http://kinko.epizy.com/'
 
 			},
 			{
-				title: 'Third Project',
+				title: 'Business website',
 				author: 'Me',
-				date: 'Three Month Ago',
+				date: '24.07.2020',
 				hover: false,
-				class: 'three'
-
+				class: 'three',
+				a: 'http://kinko.epizy.com/three.html'
+			},
+			{
+				title: 'Blog',
+				author: 'Me',
+				date: '12.09.2021',
+				hover: false,
+				class: 'four',
+				a: 'https://blog-js-6a0bc.web.app'
 			}
 		],
 	},

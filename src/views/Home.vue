@@ -16,7 +16,7 @@
 		<!-- <img class="" src="@/assets/first.png" alt=""> -->
 		<transition name="fade">
 			<div v-if="item.hover" class="hover" >
-			<h3 class="bold">{{item.title}}</h3>
+			<h3 class="bold"><a :href="item.a" class="bold home_a" target="_blank">{{item.title}}</a></h3>
 			<span class="regular">Develop by {{item.author}}</span>
 		</div>
 		</transition>
@@ -65,6 +65,9 @@ export default {
 	align-items: ceter
 	flex-direction: column
 	margin: 2% 5%
+	&_a
+		color: #000
+		+bold
 	&-h
 		margin: 0px
 		margin-bottom: 20px
@@ -88,14 +91,18 @@ export default {
 	flex-wrap: wrap
 	width: 100%
 	&-item
+		border-radius: 10px
 		display: flex
 		flex-direction: column
 		justify-content: flex-end
-		width: 300px
+		width: 350px
 		height: 300px
 		background-color: $mainGray
-		margin: 1%
+		margin: 2%
+		box-shadow: 0px 10px 20px 1px $mainGray;
+
 .hover
+	border-radius: 0px 0px 10px 10px
 	display: flex
 	justify-content: center
 	flex-direction: column
@@ -119,12 +126,27 @@ export default {
 		
 .first
 	background-image: url(../assets/first.png)
-	background-size: 300px 300px
-	background-position: center
+	background-size: 350px 300px
+	// background-position: 50% 50%
 	background-repeat: no-repeat
 .two
 	background-image: url(../assets/two.png)
-	background-size: 300px 300px
-	background-position: center
+	background-size: 350px 400px
+	// background-position: center
 	background-repeat: no-repeat
+.three
+	background-image: url(../assets/three.png)
+	background-size: 450px 300px
+	// background-position: cover	
+	background-repeat: no-repeat
+.four
+	background-image: url(../assets/Blog_kinko.png)
+	background-size: 1100px 500px
+	background-position: 50% 50%
+	// background-repeat: no-repeat
+	// ackground-position: cover	
+
+
+
+
 </style>
