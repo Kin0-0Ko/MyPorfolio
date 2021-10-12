@@ -34,6 +34,14 @@ export default {
 				hover: false,
 				class: 'four',
 				a: 'https://blog-js-6a0bc.web.app'
+			},
+			{
+				title: 'To Do List',
+				author: 'Me',
+				date: '10.12.2021',
+				hover: false,
+				class: 'five',
+				a: 'https://kinkotodolist.web.app/'
 			}
 		],
 	},

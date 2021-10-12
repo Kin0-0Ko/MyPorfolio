@@ -145,7 +145,10 @@ export default {
 	background-position: 50% 50%
 	// background-repeat: no-repeat
 	// ackground-position: cover	
-
+.five
+	background-image: url(../assets/ToDiList.png)
+	background-size: 400px 300px
+	background-position: 50% 50%
 
 
 
