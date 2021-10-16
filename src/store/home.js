@@ -10,15 +10,15 @@ export default {
 				class: 'first',
 				a: 'http://kinko.epizy.com/indexOne.html'
 			},
-			{
-				title: 'Piroll',
-				author: 'Me',
-				date: '3.05.2019',
-				hover: false,
-				class: 'two',
-				a: 'http://kinko.epizy.com/'
+			// {
+			// 	title: 'Piroll',
+			// 	author: 'Me',
+			// 	date: '3.05.2019',
+			// 	hover: false,
+			// 	class: 'two',
+			// 	a: 'http://kinko.epizy.com/'
 
-			},
+			// },
 			{
 				title: 'Business website',
 				author: 'Me',
