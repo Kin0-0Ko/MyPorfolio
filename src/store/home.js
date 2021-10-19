@@ -2,48 +2,7 @@ export default {
 	namespaced: true,
 	state: {
 
-		items: [{
-				title: 'Financial Сalculator',
-				author: 'Me',
-				date: '19.09.2020',
-				hover: true,
-				class: 'first',
-				a: 'http://kinko.epizy.com/indexOne.html'
-			},
-			// {
-			// 	title: 'Piroll',
-			// 	author: 'Me',
-			// 	date: '3.05.2019',
-			// 	hover: false,
-			// 	class: 'two',
-			// 	a: 'http://kinko.epizy.com/'
-
-			// },
-			{
-				title: 'Business website',
-				author: 'Me',
-				date: '24.07.2020',
-				hover: false,
-				class: 'three',
-				a: 'http://kinko.epizy.com/three.html'
-			},
-			{
-				title: 'Blog',
-				author: 'Me',
-				date: '12.09.2021',
-				hover: false,
-				class: 'four',
-				a: 'https://blog-js-6a0bc.web.app'
-			},
-			{
-				title: 'To Do List',
-				author: 'Me',
-				date: '10.12.2021',
-				hover: false,
-				class: 'five',
-				a: 'https://kinkotodolist.web.app/'
-			}
-		],
+		items: items(),
 	},
 	getters: {
 		all: state => state.items,
@@ -67,12 +26,30 @@ export default {
 				}
 			});
 
+		},
+		filterJobs(state, btn){
+
+			
+
+			if(btn == 'All'){
+			state.items = items()
+
+			}else{
+
+			state.items = items().filter(el => el.tags == btn)
+
+			}
+
+			
+
 		}
 
 
 	},
 	actions: {
-
+		clickOnFilter(store, btn){
+			store.commit('filterJobs', btn.target.dataset.tags)
+		},
 		hoverOn(store, title){
 			store.commit('onHover', title);
 		},
@@ -83,5 +60,55 @@ export default {
 	}
 }
 
+function items(){
+	return[ {
+		title: 'Financial Сalculator',
+		author: 'Me',
+		date: '19.09.2020',
+		hover: true,
+		class: 'first',
+		a: 'http://kinko.epizy.com/indexOne.html',
+		tags: 'Websites'
 
+	},
+	// {
+	// 	title: 'Piroll',
+	// 	author: 'Me',
+	// 	date: '3.05.2019',
+	// 	hover: false,
+	// 	class: 'two',
+	// 	a: 'http://kinko.epizy.com/'
+
+	// },
+	{
+		title: 'Business website',
+		author: 'Me',
+		date: '24.07.2020',
+		hover: false,
+		class: 'three',
+		a: 'http://kinko.epizy.com/three.html',
+		tags: 'Websites'
+
+	}, {
+		title: 'Blog',
+		author: 'Me',
+		date: '12.09.2021',
+		hover: false,
+		class: 'four',
+		a: 'https://blog-js-6a0bc.web.app',
+		tags: 'SPA'
+
+	}, {
+		title: 'To Do List',
+		author: 'Me',
+		date: '10.12.2021',
+		hover: false,
+		class: 'five',
+		a: 'https://kinkotodolist.web.app/',
+		tags: 'SPA'
+
+
+
+	}]
+}
 

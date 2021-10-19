@@ -2,12 +2,12 @@
 <div class="home">
 <h2 class="home-h"><span class="home-underline ">OUR <br> WORKS.</span></h2>
 <div class="filters">
-<button class="filter btn">
+<button @click="clickFilter" class="filter btn" data-tags="All">
 	All	
-</button><button class=" filter btn">
+</button><button @click="clickFilter" class="filter btn" data-tags="Websites">
 	Websites
-</button><button class="filter btn">
-	Branding
+</button><button @click="clickFilter" class="filter btn" data-tags="SPA">
+	SPA
 </button>
 </div>
 
@@ -36,7 +36,8 @@ export default {
 	},
 	methods:{
 		...mapActions('home', {hoverOn: 'hoverOn'}),
-		...mapActions('home', {hoverOut: 'hoverOut'})
+		...mapActions('home', {hoverOut: 'hoverOut'}),
+		...mapActions('home', {clickFilter: 'clickOnFilter'})
 	},
 
 	
