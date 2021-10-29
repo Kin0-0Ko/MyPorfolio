@@ -3,9 +3,8 @@
     <div class="skils-top">
       <div class="h ">
         <h2 class="skils-h ">
-          <span class="home-underline">OUR <br />
-            SKILS.</span
-          >
+          <span class="home-underline">MY <br/>
+            SKILS.</span>
         </h2>
       </div>
     </div>
@@ -37,10 +36,10 @@
 
       <div class="skils-right">
         <div v-for="boost in boosts" :key="boost">
-		<div class="skils-right_item" :class="{ active: boost.active,}">		
+		<div class="skils-right_item" :class="{ active: boost.active,}" @click="setActive(boost)">		
           <fa-icon class="skils-right_item-icon" :icon="boost.icon"  :style="{color: boost.color}"/>
           <span>{{boost.h}}</span>
-          <button class="skils-btn btn" @click="setActive(boost)">+</button>
+          <button class="skils-btn btn" >+</button>
 			</div>
 				<transition name="slide">
 					<div class="desc" v-if="boost.active">
@@ -84,12 +83,12 @@ export default {
 	transition: all .3s ease;
 
 .slide-leave-to
-	height: 70px
+	height: 45px
 	opacity: 0;
 
 
 .slide-enter-to
-	height: 70px
+	height: 45px
   	opacity: 0
 
 

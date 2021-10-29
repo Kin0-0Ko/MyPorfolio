@@ -1,6 +1,6 @@
 <template>
 <div class="home">
-<h2 class="home-h"><span class="home-underline ">OUR <br> WORKS.</span></h2>
+<h2 class="home-h"><span class="home-underline ">MY <br> WORKS.</span></h2>
 <div class="filters">
 <button @click="clickFilter" class="filter btn" data-tags="All">
 	All	

@@ -2,8 +2,7 @@
   <div class="team">
     <h2>
       <span class="home-underline h">
-		  OUR <br/>
-        TEAM.
+		  ME.
       </span>
     </h2> 
 

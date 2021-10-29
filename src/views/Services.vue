@@ -11,9 +11,9 @@ Lower prices than competitors </span> </span>
 				</div>
 		</div>
 		<div class="stat">
-			<div class="stat-items"><span><fa-icon class="top-icon" :icon="['fas', 'gift']"></fa-icon></span><span>0</span><span>Perspiciatis</span></div>
-			<div class="stat-items"><span><fa-icon class="top-icon" :icon="['fas', 'comments']"></fa-icon></span><span>0</span><span>Comments</span></div>
-			<div class="stat-items"><span><fa-icon class="top-icon" :icon="['fas', 'coffee']"></fa-icon></span><span>0</span><span>Coffee cups</span></div>
+			<div class="stat-items"><span><fa-icon class="top-icon" :icon="['fas', 'gift']"></fa-icon></span><span>6</span><span>Perspiciatis</span></div>
+			<div class="stat-items"><span><fa-icon class="top-icon" :icon="['fas', 'comments']"></fa-icon></span><span>10</span><span>Comments</span></div>
+			<div class="stat-items"><span><fa-icon class="top-icon" :icon="['fas', 'coffee']"></fa-icon></span><span>999</span><span>Coffee cups</span></div>
 			<div class="stat-items"><span><fa-icon class="top-icon" :icon="['fas', 'trophy']"></fa-icon></span><span>0</span><span>Awards</span></div>
 		</div>
 		
