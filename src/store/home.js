@@ -40,7 +40,6 @@ export default {
 
 			}
 
-			
 
 		}
 
@@ -49,6 +48,7 @@ export default {
 	actions: {
 		clickOnFilter(store, btn){
 			store.commit('filterJobs', btn.target.dataset.tags)
+			
 		},
 		hoverOn(store, title){
 			store.commit('onHover', title);

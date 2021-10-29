@@ -2,7 +2,7 @@
 <div class="home">
 <h2 class="home-h"><span class="home-underline ">MY <br> WORKS.</span></h2>
 <div class="filters">
-<button @click="clickFilter" class="filter btn" data-tags="All">
+<button @click="clickFilter" class="filter btn"  data-tags="All">
 	All	
 </button><button @click="clickFilter" class="filter btn" data-tags="Websites">
 	Websites
@@ -120,11 +120,14 @@ export default {
 	margin-bottom: 15px
 	justify-content: start
 .filter
-		margin: 5px
-.filter:hover
-	background-color: $mainRed
-	color: $white	
-		
+	margin: 5px
+	&:hover
+		background-color: $mainRed
+		color: $white	
+	&:focus
+		background-color: $mainRed
+		color: $white
+
 .first
 	background-image: url(../assets/first.png)
 	background-size: 350px 300px
