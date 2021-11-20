@@ -129,8 +129,9 @@ export default {
 		color: $white
 
 .first
-	background-image: url(../assets/first.png)
-	background-size: 350px 300px
+	// background-image: url(../assets/first.png)
+	// background-size: 350px 300px
+	background: center/100% 100% url(../assets/first.png)
 	// background-position: 50% 50%
 	background-repeat: no-repeat
 .two
@@ -139,20 +140,24 @@ export default {
 	// background-position: center
 	background-repeat: no-repeat
 .three
-	background-image: url(../assets/three.png)
-	background-size: 450px 300px
+	// background-image: url(../assets/three.png)
+	// background-size: 450px 300px
+	background: center/100% 100% url(../assets/three.png)
+
 	// background-position: cover	
 	background-repeat: no-repeat
 .four
 	background-image: url(../assets/Blog_kinko.png)
-	background-size: 1100px 500px
+	background-size: 900px 500px
 	background-position: 50% 50%
 	// background-repeat: no-repeat
 	// ackground-position: cover	
 .five
-	background-image: url(../assets/ToDiList.png)
-	background-size: 400px 300px
-	background-position: 50% 50%
+	// background-image: url(../assets/ToDoList.png)
+	// background-size: 400px 300px
+	// background-position: 50% 50%
+	background: center/110% 100% url(../assets/ToDolist.png)
+
 
 
 
