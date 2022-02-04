@@ -8,7 +8,11 @@
 
     <div class="teammates" >
 
-      <div class="card " @mouseenter="hoverOn(people.name)" @mouseleave="hoverOut(people.name)"  v-for="people in teammates" :key="people">
+    	<div class="card " 
+		@mouseenter="hoverOn(people.name)"
+		@mouseleave="hoverOut(people.name)" 
+		v-for="people in teammates" :key="people"
+		>
 
         <div class="card_top" >
           <div class="card_top-avatar">
@@ -17,9 +21,21 @@
 
 		<transition name="rotate">
 			<div v-if="people.hover" class="card_top-icons">
-           		<span class="icons inst"> <a class="icons_img" :href="people.inst"><fa-icon class="icon" :icon="['fab', 'instagram']" style="color:white"/></a></span>
-            	<span class="icons twtr"><a class="icons_img" :href="people.twtr"><fa-icon class="icon" :icon="['fab', 'facebook']" style="color:white"/></a></span>
-            	<span class="icons git"><a class="icons_img" :href="people.git"><fa-icon class="icon" :icon="['fab', 'github']" style="color:white"/></a></span>
+           		<span class="icons inst"> 
+					   <a class="icons_img" :href="people.inst">
+						   <fa-icon class="icon" :icon="['fab', 'instagram']" style="color:white"/>
+						</a>
+				</span>
+            	<span class="icons twtr">
+					<a class="icons_img" :href="people.twtr">
+						<fa-icon class="icon" :icon="['fab', 'facebook']" style="color:white"/>
+					</a>
+					</span>
+            	<span class="icons git">
+					<a class="icons_img" :href="people.git">
+						<fa-icon class="icon" :icon="['fab', 'github']" style="color:white"/>
+					</a>
+					</span>
           </div>
 		</transition>
 

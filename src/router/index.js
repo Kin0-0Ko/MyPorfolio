@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+// imports views
 import  Home  from '@/views/Home';
 import  Services  from '@/views/Services';
 import  Skils from '@/views/Skils';

@@ -1,7 +1,7 @@
 export default {
 	namespaced: true,
 	state: {
-		pBars: [
+		pBars: [ //setting for progres bars components
 			{
 				progress: 75,
 				color: '#ca3c3c',
@@ -31,9 +31,9 @@ export default {
 				emptyColor: '#cccccc'
 			}
 		],
-		boosts: [
+		boosts: [ //info for boosts
 			{
-				icon: 'rocket' ,
+				icon: 'rocket',
 				h: 'Execution speed',
 				desc: 'For an additional fee, you can speed up the work	(within reasonable limits)',
 				active: true,
@@ -49,7 +49,7 @@ export default {
 
 			},
 			{
-				icon:'location-arrow',
+				icon: 'location-arrow',
 				h: 'Prepaid expense',
 				desc: ' Advance payment is 50 % of the order price ',
 				active: false,
@@ -63,51 +63,33 @@ export default {
 				color: 'gray'
 
 
-			},
-			// {
-			// 	icon: 'book',
-			// 	h: 'Neque porro quisquam est qui',
-			// 	desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-			// 	active: false,
-			// 	color: 'gray'
-
-			// },
+			}
 		],
 	},
 	getters: {
-		all: state => state.pBars,
-		boosts: state => state.boosts,
+		all: state => state.pBars, // get array of settings p-bars
+		boosts: state => state.boosts, // get array of boosts
 	},
 	mutations: {
 
-		setActive(state, boost){
-			if(boost.active){
+		setActive(state, boost) { //make boost active
+			if (boost.active) {
 				boost.active = false;
 				boost.color = 'gray';
-			}else{
+			} else {
 				boost.active = true;
 				boost.color = 'red';
 
 			}
 
 		},
-		markActive(state, boost){
-			let a = ''
-			if(boost.active){
-				a = 'active';
-			}
-			return a
-		}
 
 
 	},
 	actions: {
 
-		setActive(store, boost){
+		setActive(store, boost) {
 			store.commit('setActive', boost);
-		},
-		markActive(store, boost){
-			store.commit('markActive', boost)
 		}
 
 	}
