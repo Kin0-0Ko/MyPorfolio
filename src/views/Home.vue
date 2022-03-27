@@ -71,6 +71,7 @@ export default {
 	&_a
 		color: #000
 		+bold
+		text-decoration: underline
 	&-h
 		margin: 0px
 		margin-bottom: 20px

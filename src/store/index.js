@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+// import store commponents
 import home from './home'
 import team from './team'
 import skils from './skils'

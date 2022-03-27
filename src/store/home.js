@@ -1,7 +1,6 @@
 export default {
 	namespaced: true,
 	state: {
-
 		items: items(),
 	},
 	getters: {
@@ -9,14 +8,14 @@ export default {
 	},
 	mutations: {
 
-		onHover(state, title){
+		onHover(state, title) {
 			state.items.forEach(el => {
 				if (title == el.title) {
 					el.hover = true;
 
 				}
 			});
-			
+
 		},
 		outHover(state, title) {
 			state.items.forEach(el => {
@@ -27,30 +26,20 @@ export default {
 			});
 
 		},
-		filterJobs(state, btn){
-
-			
-
-			if(btn == 'All'){
-			state.items = items()
-
-			}else{
-
-			state.items = items().filter(el => el.tags == btn)
-
-			}
-
+		filterJobs(state, btn) {
+			//filter in relation to data tag of button
+			btn == 'All' ? state.items = items() : state.items = items().filter(el => el.tags == btn) 
 
 		}
 
 
 	},
 	actions: {
-		clickOnFilter(store, btn){
+		clickOnFilter(store, btn) {
 			store.commit('filterJobs', btn.target.dataset.tags)
-			
+
 		},
-		hoverOn(store, title){
+		hoverOn(store, title) {
 			store.commit('onHover', title);
 		},
 		hoverOut(store, title) {
@@ -117,4 +106,5 @@ function items(){
 	}
 ]
 }
+
 

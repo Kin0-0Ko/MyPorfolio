@@ -20,23 +20,21 @@
 	</div>
 </template>
 <script>
-
-	import { FontAwesomeIcon as FaIcon } from '@fortawesome/vue-fontawesome';
+import { FontAwesomeIcon as FaIcon } from "@fortawesome/vue-fontawesome";
 
 export default {
-	components: {
-		FaIcon,
-	}
-}
+  components: {
+    FaIcon,
+  },
+};
 </script>
 <style lang="sass">
-@import 'src/assets/styles/main.sass';
+@import 'src/assets/styles/main.sass'
 .main
 	height: 824px
 
 .services
 	height: 100%
-
 
 .stat
 	color: $white
@@ -52,10 +50,6 @@ export default {
 		justify-content: center
 		width: 23%
 
-		
-		
-	
-
 .top
 	height: 50%
 	display: flex
@@ -67,34 +61,32 @@ export default {
 		flex-wrap: wrap
 		justify-content: center
 
-
 	&-underline
 		position: relative
 	&-underline::after
 		width: 120%
-		display: block;
-		position: absolute;
-		content: "";
-		height: 5px;
+		display: block
+		position: absolute
+		content: ""
+		height: 5px
 		background-color: $white
 	h2
-		margin: 0	
+		margin: 0
 		width: 25%
-	&-icon	
+	&-icon
 		width: 50px !important
 		height: 50px
 
-
 .services
 	background-color: $mainRed
-.ser-h	
+.ser-h
 	position: relative
 	margin: 0px
 	margin-bottom: 20px
-	color:  $white	
+	color: $white
 	font-size: 40px
 .feature
-	color: $white	
+	color: $white
 	width: 50%
 	span
 		+reg
@@ -106,11 +98,10 @@ export default {
 	align-items: center
 	margin: 20PX
 	float: left
-	border: solid 2px 
+	border: solid 2px
 	border-radius: 50%
 	width: 100px
 	height: 100px
-
 
 @media ( max-width: 1060px )
 	.top
@@ -123,7 +114,6 @@ export default {
 	.services
 		height: auto
 
-
 @media ( max-width: 610px )
 	.stat
 		height: 50%
@@ -133,7 +123,5 @@ export default {
 		&-items
 			margin-top: 15px
 		.services
-		 	height: auto
-		
-
+			height: auto
 </style>

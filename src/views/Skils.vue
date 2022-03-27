@@ -66,7 +66,6 @@ export default {
   },
   methods: {
 	  ...mapMutations('skils', {setActive: 'setActive'}),
-	  ...mapMutations('skils', {mark: 'markActive'})
   },
 };
 </script>

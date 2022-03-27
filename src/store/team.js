@@ -13,22 +13,23 @@ export default {
 
 	},
 	getters: {
-		teammates: state => state.team,
+		teammates: state => state.team, 		//getting list of teamates
 
 	},
 	mutations: {
 		onHover(state, name) {
 			state.team.forEach(el => {
 				if (name == el.name) {
-					el.hover = true;
+					el.hover = true;				//logic for on hover animation
 				}
+
 			});
 
 		},
 		outHover(state, name) {
 			state.team.forEach(el => {
 				if (name == el.name) {
-					el.hover = false;
+					el.hover = false;			//logic for hover out animation
 				}
 			});
 
@@ -37,10 +38,10 @@ export default {
 	},
 	actions: {
 		hoverOn(store, name){
-			store.commit('onHover', name);
+			store.commit('onHover', name); 			//action for onHover mutasion
 		},
 		hoverOut(store, name) {
-			store.commit('outHover', name);
+			store.commit('outHover', name);         //action for onHover mutasion
 		},
 	}
 }
