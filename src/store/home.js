@@ -68,7 +68,7 @@ function items(){
 		hover: true,
 		class: 'first',
 		a: 'http://kinko.epizy.com/indexOne.html',
-		tags: 'Websites'
+		tags: 'Native'
 
 	},
 	// {
@@ -86,8 +86,8 @@ function items(){
 		date: '24.07.2020',
 		hover: false,
 		class: 'three',
-		a: 'http://kinko.epizy.com/three.html',
-		tags: 'Websites'
+		a: 'https://pizzagusto-a9548.web.app/',
+		tags: 'React'
 
 	}, {
 		title: 'Blog',
@@ -96,19 +96,25 @@ function items(){
 		hover: false,
 		class: 'four',
 		a: 'https://blog-js-6a0bc.web.app',
-		tags: 'SPA'
+		tags: 'Native'
 
 	}, {
-		title: 'To Do List',
+		title: 'Vue to-do',
 		author: 'Me',
 		date: '10.12.2021',
 		hover: false,
 		class: 'five',
 		a: 'https://kinkotodolist.web.app/',
-		tags: 'SPA'
-
-
-
-	}]
+		tags: 'Vue'
+	}, {
+		title: 'React To-do',
+		author: 'Me',
+		date: '10.12.2021',
+		hover: false,
+		class: 'two',
+		a: 'https://react-todo-list-fe65b.web.app',
+		tags: 'React'
+	}
+]
 }
 

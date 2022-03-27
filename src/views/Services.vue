@@ -7,7 +7,7 @@
 					<span class="feature"> <span class="icon-br"><fa-icon class="top-icon" :icon="['fas', 'gavel']"></fa-icon></span> <span><h3 > FEATURE 2</h3> </span> <span> If the product does not meet the agreed terms of reference, we will refund your money </span> </span>
 					<span class="feature"> <span class="icon-br"><fa-icon class="top-icon" :icon="['fas', 'bolt']"></fa-icon></span> <span><h3 > FEATURE 3</h3></span> <span> Fast execution of assigned tasks  </span> </span>
 					<span class="feature"> <span class="icon-br"><fa-icon class="top-icon" :icon="['fas', 'utensils']"></fa-icon></span> <span><h3 > FEATURE 4</h3></span> <span> 
-Lower prices than competitors </span> </span>
+						Lower prices than competitors </span> </span>
 				</div>
 		</div>
 		<div class="stat">

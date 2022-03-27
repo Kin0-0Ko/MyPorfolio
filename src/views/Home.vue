@@ -4,10 +4,12 @@
 <div class="filters">
 <button @click="clickFilter" class="filter btn"  data-tags="All">
 	All	
-</button><button @click="clickFilter" class="filter btn" data-tags="Websites">
-	Websites
-</button><button @click="clickFilter" class="filter btn" data-tags="SPA">
-	SPA
+</button><button @click="clickFilter" class="filter btn" data-tags="React">
+	React
+</button><button @click="clickFilter" class="filter btn" data-tags="Vue">
+	Vue
+</button><button @click="clickFilter" class="filter btn" data-tags="Native">
+	Native
 </button>
 </div>
 
@@ -129,27 +131,20 @@ export default {
 		color: $white
 
 .first
-	// background-image: url(../assets/first.png)
-	// background-size: 350px 300px
 	background: center/100% 100% url(../assets/first.png)
-	// background-position: 50% 50%
 	background-repeat: no-repeat
 .two
-	background-image: url(../assets/two.png)
-	background-size: 350px 400px
-	// background-position: center
+	background: center/100% 100% url(../assets/reactToDo.png) 
 	background-repeat: no-repeat
-.three
-	// background-image: url(../assets/three.png)
-	// background-size: 450px 300px
-	background: center/100% 100% url(../assets/three.png)
+	
 
-	// background-position: cover	
-	background-repeat: no-repeat
+.three
+	background: center/130% 100% url(../assets/PizzaGusto.png) no-repeat
+	
 .four
 	background-image: url(../assets/Blog_kinko.png)
 	background-size: 900px 500px
-	background-position: 50% 50%
+	background-position: center
 	// background-repeat: no-repeat
 	// ackground-position: cover	
 .five
